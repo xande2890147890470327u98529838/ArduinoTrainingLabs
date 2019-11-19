@@ -6,8 +6,8 @@
  * off, and back on in a While Loop.
  */
 //digital pin2 has a push button attached to it
-int pushbutton = 2
-void setup() }
+int pushButton = 2;
+void setup() {
  //initialize serial serial communication at 9600 bits per second
  Serial.begin(9600);
 //make the pushButton an input
@@ -18,10 +18,11 @@ pinMode(pushButton, INPUT);
 
 void loop() {
   // read the input pin
-  int buttonstate = digitalRead(pushButton);
+  int buttonState = digitalRead(pushButton);
   //print ojt the state of the button
   Serial.println(buttonState);
   // print out the state of the button
   Serial.println(buttonState);
-  delay(25); // delay in between readings for stability
+  delay(250); // delay in between readings for stability
+}
  
